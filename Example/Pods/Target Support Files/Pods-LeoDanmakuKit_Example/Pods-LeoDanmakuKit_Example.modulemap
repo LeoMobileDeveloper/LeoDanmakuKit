@@ -1,0 +1,6 @@
+framework module Pods_LeoDanmakuKit_Example {
+  umbrella header "Pods-LeoDanmakuKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

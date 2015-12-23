@@ -1,0 +1,6 @@
+framework module LeoDanmakuKit {
+  umbrella header "LeoDanmakuKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

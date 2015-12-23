@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03BDE34A8B1448D34F0E6F3F9D0C164B /* LeoDanmakuChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 13735F6CB55E45D347AB89223BD20B73 /* LeoDanmakuChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A0D7A4563411067FB4AF527297F76E3 /* LeoDanmakuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B556DBE47E24BE0BAB04850EEF84C23 /* LeoDanmakuView.m */; };
+		0EB01AADC77FE8A1DF4A883346613A20 /* LeoDanmakuChannelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B635697FAC7033C46CD2467453B710 /* LeoDanmakuChannelManager.m */; };
+		1081B370205584AA6412C8C83C85890D /* LeoDanmakuChannelManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 701CCF226348BBA731E271DAD7AED36B /* LeoDanmakuChannelManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15F42B91AAEC0F82E80C73C9E2EFFCC7 /* LeoDanmaku.h in Headers */ = {isa = PBXBuildFile; fileRef = BD8DF97DABA789236250C7356B1B6A0E /* LeoDanmaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2056D59A02C3205C75CF479E0896E80E /* Pods-LeoDanmakuKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 746BD09E97A235F47F3808049930CD71 /* Pods-LeoDanmakuKit_Tests-dummy.m */; };
+		49588FCD07A77F7979B1AF2FEC9ECD12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		5943B513BC0758FFA4BFC48837F6CC44 /* Pods-LeoDanmakuKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC10F5087D6198B8465934F6C84225 /* Pods-LeoDanmakuKit_Example-dummy.m */; };
+		6B010877EA86275D2EC641D510CC1C0D /* LeoDanmkuModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 511849CE2086F3338AF1A8A2861F5620 /* LeoDanmkuModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D1FC230C8C2826065EC9CECA410F158 /* LeoDanmakuKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AA2D9A912853438FDA62ABB49298E99 /* LeoDanmakuKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C70CC9D10258BE44565D4CFDD65763D /* LeoDanmakuKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A8F4EBED326E997B27B2CCA01955CC /* LeoDanmakuKit-dummy.m */; };
+		7CB711888B39847403A4A650B9D81A5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		91A2F0DC3A22A06E1181481835128882 /* LeoDanmakuChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C921ED686A2D320E6A65878FABE787 /* LeoDanmakuChannel.m */; };
+		A7AF80D419DD060FA050790A93311FB2 /* LeoDanmakuView.h in Headers */ = {isa = PBXBuildFile; fileRef = BC64C9519EC9F434930408F26577635A /* LeoDanmakuView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0E2982161A9FDC9D8D4CAA5B95B177F /* LeoDanmakuRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = CB7EC3939B4032376B18557A5076BD29 /* LeoDanmakuRandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE4844B04C0158A2512392FBF2952357 /* LeoDanmakuRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1AE32D864BCF0BFB73D74EFD63AA8C /* LeoDanmakuRandom.m */; };
+		C809ADA58A0775460F9794210FA37398 /* LeoDanmkuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1BF2DCE45946ADD434C925270DD54 /* LeoDanmkuModel.m */; };
+		CEEDC47708826C954B66B6F43CDB4F1E /* LeoDanmakuKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E0FC8E85768472B06370E57178FFE84F /* LeoDanmakuKit.bundle */; };
+		D7832A651B98C347BB0751CFE95B2255 /* LeoDanmakuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FE30A4ED89C50FE4A61C80B8BA4735 /* LeoDanmakuLayer.m */; };
+		E6702D416493A7389FDDDC3C25E02691 /* Pods-LeoDanmakuKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17AB20F4BB55EA5A125BE1D0AEBB4F6E /* Pods-LeoDanmakuKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6924D1C558A7818779A5FB85ED0C21D /* LeoDanmakuLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E9855739458FA4D6CE60842F06CA44C1 /* LeoDanmakuLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7FE075720753F1FABCBEBCF62F42C6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		FF6FB99F1543E83086013EA0AEE7C7D2 /* Pods-LeoDanmakuKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF1C09F60AA414DA887D1B4A7DFF9287 /* Pods-LeoDanmakuKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0720750A344D0C9A955AD088C8FBA0E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34A6E85F030F8082F6B085FB368B5F95;
+			remoteInfo = LeoDanmakuKit;
+		};
+		0D9A5F6D134D42B0EF5C9318BD2FF6F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A78B62B1861F56608C17669A669497DE;
+			remoteInfo = "LeoDanmakuKit-LeoDanmakuKit";
+		};
+		66A71954977525C971F50081E57FAC87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34A6E85F030F8082F6B085FB368B5F95;
+			remoteInfo = LeoDanmakuKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12398C88A77D4FC7CB1B913B5400CDEE /* Pods_LeoDanmakuKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeoDanmakuKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13664A1B7B96311504EDC3806712B5E9 /* Pods-LeoDanmakuKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeoDanmakuKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		13735F6CB55E45D347AB89223BD20B73 /* LeoDanmakuChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LeoDanmakuChannel.h; sourceTree = "<group>"; };
+		15C921ED686A2D320E6A65878FABE787 /* LeoDanmakuChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LeoDanmakuChannel.m; sourceTree = "<group>"; };
+		17AB20F4BB55EA5A125BE1D0AEBB4F6E /* Pods-LeoDanmakuKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeoDanmakuKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		191850DEDD584FF6FC1E13F88011D4D5 /* Pods-LeoDanmakuKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeoDanmakuKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		28CA10BD781D88F586C954A5AE248426 /* Pods-LeoDanmakuKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LeoDanmakuKit_Tests.modulemap"; sourceTree = "<group>"; };
+		2AA2D9A912853438FDA62ABB49298E99 /* LeoDanmakuKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeoDanmakuKit-umbrella.h"; sourceTree = "<group>"; };
+		2CF5BE973862F5CCAAE9942388999DB1 /* Pods-LeoDanmakuKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeoDanmakuKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		42B1BF2DCE45946ADD434C925270DD54 /* LeoDanmkuModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LeoDanmkuModel.m; sourceTree = "<group>"; };
+		4976193BA5FFD9BD575589812F7FAFAC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		511849CE2086F3338AF1A8A2861F5620 /* LeoDanmkuModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LeoDanmkuModel.h; sourceTree = "<group>"; };
+		54FE30A4ED89C50FE4A61C80B8BA4735 /* LeoDanmakuLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LeoDanmakuLayer.m; sourceTree = "<group>"; };
+		58EDC8B3AFFC5B985F14D3B91C85E6D5 /* Pods-LeoDanmakuKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeoDanmakuKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		611DFFBF170058A9ED71702EF010BEA5 /* LeoDanmakuKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeoDanmakuKit-prefix.pch"; sourceTree = "<group>"; };
+		6B36184239E828F140F858956F236B5C /* Pods-LeoDanmakuKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeoDanmakuKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		701CCF226348BBA731E271DAD7AED36B /* LeoDanmakuChannelManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LeoDanmakuChannelManager.h; sourceTree = "<group>"; };
+		70E2F6CB350F6D214828C29C4949099E /* LeoDanmakuKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeoDanmakuKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		741DCBE5F707018B4A5D80FD50F91628 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		746BD09E97A235F47F3808049930CD71 /* Pods-LeoDanmakuKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeoDanmakuKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		87A607A39C1ADED13D9CB75CE95FB7E7 /* Pods_LeoDanmakuKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeoDanmakuKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C1AE32D864BCF0BFB73D74EFD63AA8C /* LeoDanmakuRandom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LeoDanmakuRandom.m; sourceTree = "<group>"; };
+		9839C95A53B341E3C7D94363A4A8DE95 /* Pods-LeoDanmakuKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LeoDanmakuKit_Example.modulemap"; sourceTree = "<group>"; };
+		9B556DBE47E24BE0BAB04850EEF84C23 /* LeoDanmakuView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LeoDanmakuView.m; sourceTree = "<group>"; };
+		A0B635697FAC7033C46CD2467453B710 /* LeoDanmakuChannelManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LeoDanmakuChannelManager.m; sourceTree = "<group>"; };
+		A5BADAE0FE538EF1DC41AAFFCCE884EE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF1C09F60AA414DA887D1B4A7DFF9287 /* Pods-LeoDanmakuKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeoDanmakuKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B256ED6F98E037521CF981C25F4146C1 /* LeoDanmakuKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LeoDanmakuKit.modulemap; sourceTree = "<group>"; };
+		B48F92ADC9ADFD913F33153F875C468A /* Pods-LeoDanmakuKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeoDanmakuKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BAD6EFCF5D375FD410C45ECAF052BED5 /* Pods-LeoDanmakuKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeoDanmakuKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BC64C9519EC9F434930408F26577635A /* LeoDanmakuView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LeoDanmakuView.h; sourceTree = "<group>"; };
+		BD8DF97DABA789236250C7356B1B6A0E /* LeoDanmaku.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LeoDanmaku.h; sourceTree = "<group>"; };
+		CA57A894A6B802CA5554E61BAB73FC93 /* Pods-LeoDanmakuKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeoDanmakuKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CB7EC3939B4032376B18557A5076BD29 /* LeoDanmakuRandom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LeoDanmakuRandom.h; sourceTree = "<group>"; };
+		CD0D7CA8ED5728F903386B8F49DAF06D /* Pods-LeoDanmakuKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeoDanmakuKit_Example-resources.sh"; sourceTree = "<group>"; };
+		D06D3245A945102F2A80251BE6E5166F /* Pods-LeoDanmakuKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeoDanmakuKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D8CC10F5087D6198B8465934F6C84225 /* Pods-LeoDanmakuKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeoDanmakuKit_Example-dummy.m"; sourceTree = "<group>"; };
+		E0FC8E85768472B06370E57178FFE84F /* LeoDanmakuKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeoDanmakuKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A8F4EBED326E997B27B2CCA01955CC /* LeoDanmakuKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LeoDanmakuKit-dummy.m"; sourceTree = "<group>"; };
+		E7C0CD959F20C986FD61F40C92578A58 /* Pods-LeoDanmakuKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeoDanmakuKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E9855739458FA4D6CE60842F06CA44C1 /* LeoDanmakuLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LeoDanmakuLayer.h; sourceTree = "<group>"; };
+		E9C6591FA1C8119DA11BCB8C2463E71B /* LeoDanmakuKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeoDanmakuKit.xcconfig; sourceTree = "<group>"; };
+		F8EC6574FA5BACF8DE2367C6FF12C473 /* Pods-LeoDanmakuKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeoDanmakuKit_Tests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DEFDE4B9EDC6AB08E125CDFC8DB1909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7FE075720753F1FABCBEBCF62F42C6A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89441FECFCA4D2D848FE2B01F55D8BFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD703CCB695A16513DDE225C103AAC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49588FCD07A77F7979B1AF2FEC9ECD12 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9686912A4815D510A21A860B2E2D4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CB711888B39847403A4A650B9D81A5B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02D3DEDC50267309D53337DE9AD6E48F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8EE5530F80C746936B0B93BC596B9032 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		1D1B6C92FA8285C0742FE548CFB0DED8 /* LeoDanmakuKit */ = {
+			isa = PBXGroup;
+			children = (
+				02D3DEDC50267309D53337DE9AD6E48F /* Pod */,
+				6EEAA75278EDF1CEA74A3256F92C6B6B /* Support Files */,
+			);
+			name = LeoDanmakuKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2596C5C04104125D846B60A86E1E303E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0FC8E85768472B06370E57178FFE84F /* LeoDanmakuKit.bundle */,
+				70E2F6CB350F6D214828C29C4949099E /* LeoDanmakuKit.framework */,
+				87A607A39C1ADED13D9CB75CE95FB7E7 /* Pods_LeoDanmakuKit_Example.framework */,
+				12398C88A77D4FC7CB1B913B5400CDEE /* Pods_LeoDanmakuKit_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40C2C6B8D635A1A22D27DC3AFF01C95C /* Pods-LeoDanmakuKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A5BADAE0FE538EF1DC41AAFFCCE884EE /* Info.plist */,
+				28CA10BD781D88F586C954A5AE248426 /* Pods-LeoDanmakuKit_Tests.modulemap */,
+				6B36184239E828F140F858956F236B5C /* Pods-LeoDanmakuKit_Tests-acknowledgements.markdown */,
+				BAD6EFCF5D375FD410C45ECAF052BED5 /* Pods-LeoDanmakuKit_Tests-acknowledgements.plist */,
+				746BD09E97A235F47F3808049930CD71 /* Pods-LeoDanmakuKit_Tests-dummy.m */,
+				191850DEDD584FF6FC1E13F88011D4D5 /* Pods-LeoDanmakuKit_Tests-frameworks.sh */,
+				F8EC6574FA5BACF8DE2367C6FF12C473 /* Pods-LeoDanmakuKit_Tests-resources.sh */,
+				AF1C09F60AA414DA887D1B4A7DFF9287 /* Pods-LeoDanmakuKit_Tests-umbrella.h */,
+				58EDC8B3AFFC5B985F14D3B91C85E6D5 /* Pods-LeoDanmakuKit_Tests.debug.xcconfig */,
+				CA57A894A6B802CA5554E61BAB73FC93 /* Pods-LeoDanmakuKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-LeoDanmakuKit_Tests";
+			path = "Target Support Files/Pods-LeoDanmakuKit_Tests";
+			sourceTree = "<group>";
+		};
+		5D58FE5532924CB3C4192E0817D86DB5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				873FF11B645BF3AF3DED1B53744AB902 /* Pods-LeoDanmakuKit_Example */,
+				40C2C6B8D635A1A22D27DC3AFF01C95C /* Pods-LeoDanmakuKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6EEAA75278EDF1CEA74A3256F92C6B6B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				741DCBE5F707018B4A5D80FD50F91628 /* Info.plist */,
+				B256ED6F98E037521CF981C25F4146C1 /* LeoDanmakuKit.modulemap */,
+				E9C6591FA1C8119DA11BCB8C2463E71B /* LeoDanmakuKit.xcconfig */,
+				E1A8F4EBED326E997B27B2CCA01955CC /* LeoDanmakuKit-dummy.m */,
+				611DFFBF170058A9ED71702EF010BEA5 /* LeoDanmakuKit-prefix.pch */,
+				2AA2D9A912853438FDA62ABB49298E99 /* LeoDanmakuKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LeoDanmakuKit";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				A536C29305E7EC5BE2CC64212389F749 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				2596C5C04104125D846B60A86E1E303E /* Products */,
+				5D58FE5532924CB3C4192E0817D86DB5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		873FF11B645BF3AF3DED1B53744AB902 /* Pods-LeoDanmakuKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				4976193BA5FFD9BD575589812F7FAFAC /* Info.plist */,
+				9839C95A53B341E3C7D94363A4A8DE95 /* Pods-LeoDanmakuKit_Example.modulemap */,
+				B48F92ADC9ADFD913F33153F875C468A /* Pods-LeoDanmakuKit_Example-acknowledgements.markdown */,
+				E7C0CD959F20C986FD61F40C92578A58 /* Pods-LeoDanmakuKit_Example-acknowledgements.plist */,
+				D8CC10F5087D6198B8465934F6C84225 /* Pods-LeoDanmakuKit_Example-dummy.m */,
+				13664A1B7B96311504EDC3806712B5E9 /* Pods-LeoDanmakuKit_Example-frameworks.sh */,
+				CD0D7CA8ED5728F903386B8F49DAF06D /* Pods-LeoDanmakuKit_Example-resources.sh */,
+				17AB20F4BB55EA5A125BE1D0AEBB4F6E /* Pods-LeoDanmakuKit_Example-umbrella.h */,
+				2CF5BE973862F5CCAAE9942388999DB1 /* Pods-LeoDanmakuKit_Example.debug.xcconfig */,
+				D06D3245A945102F2A80251BE6E5166F /* Pods-LeoDanmakuKit_Example.release.xcconfig */,
+			);
+			name = "Pods-LeoDanmakuKit_Example";
+			path = "Target Support Files/Pods-LeoDanmakuKit_Example";
+			sourceTree = "<group>";
+		};
+		8EE5530F80C746936B0B93BC596B9032 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BD8DF97DABA789236250C7356B1B6A0E /* LeoDanmaku.h */,
+				13735F6CB55E45D347AB89223BD20B73 /* LeoDanmakuChannel.h */,
+				15C921ED686A2D320E6A65878FABE787 /* LeoDanmakuChannel.m */,
+				701CCF226348BBA731E271DAD7AED36B /* LeoDanmakuChannelManager.h */,
+				A0B635697FAC7033C46CD2467453B710 /* LeoDanmakuChannelManager.m */,
+				E9855739458FA4D6CE60842F06CA44C1 /* LeoDanmakuLayer.h */,
+				54FE30A4ED89C50FE4A61C80B8BA4735 /* LeoDanmakuLayer.m */,
+				CB7EC3939B4032376B18557A5076BD29 /* LeoDanmakuRandom.h */,
+				8C1AE32D864BCF0BFB73D74EFD63AA8C /* LeoDanmakuRandom.m */,
+				BC64C9519EC9F434930408F26577635A /* LeoDanmakuView.h */,
+				9B556DBE47E24BE0BAB04850EEF84C23 /* LeoDanmakuView.m */,
+				511849CE2086F3338AF1A8A2861F5620 /* LeoDanmkuModel.h */,
+				42B1BF2DCE45946ADD434C925270DD54 /* LeoDanmkuModel.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A536C29305E7EC5BE2CC64212389F749 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D1B6C92FA8285C0742FE548CFB0DED8 /* LeoDanmakuKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		188C31B9F773CEE2D5BFD9840BFCEF47 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F42B91AAEC0F82E80C73C9E2EFFCC7 /* LeoDanmaku.h in Headers */,
+				03BDE34A8B1448D34F0E6F3F9D0C164B /* LeoDanmakuChannel.h in Headers */,
+				1081B370205584AA6412C8C83C85890D /* LeoDanmakuChannelManager.h in Headers */,
+				6D1FC230C8C2826065EC9CECA410F158 /* LeoDanmakuKit-umbrella.h in Headers */,
+				E6924D1C558A7818779A5FB85ED0C21D /* LeoDanmakuLayer.h in Headers */,
+				B0E2982161A9FDC9D8D4CAA5B95B177F /* LeoDanmakuRandom.h in Headers */,
+				A7AF80D419DD060FA050790A93311FB2 /* LeoDanmakuView.h in Headers */,
+				6B010877EA86275D2EC641D510CC1C0D /* LeoDanmkuModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49619D3EBCBBB4F2BEA94433B6083715 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6FB99F1543E83086013EA0AEE7C7D2 /* Pods-LeoDanmakuKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75417E16140CA46D323189521BD49578 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6702D416493A7389FDDDC3C25E02691 /* Pods-LeoDanmakuKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		34A6E85F030F8082F6B085FB368B5F95 /* LeoDanmakuKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB9A03E06711799A25A3090D5642BD95 /* Build configuration list for PBXNativeTarget "LeoDanmakuKit" */;
+			buildPhases = (
+				26EB611F13C867A8F5D0306BB26CCCCB /* Sources */,
+				9BD703CCB695A16513DDE225C103AAC3 /* Frameworks */,
+				E3955C128E8FBACE53E9AF1AFF011A2F /* Resources */,
+				188C31B9F773CEE2D5BFD9840BFCEF47 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1A41CCF7238E1D6DFA0EC84DE6647E7 /* PBXTargetDependency */,
+			);
+			name = LeoDanmakuKit;
+			productName = LeoDanmakuKit;
+			productReference = 70E2F6CB350F6D214828C29C4949099E /* LeoDanmakuKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60A8D17337B0BE279AC76382FAC87C1A /* Pods-LeoDanmakuKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C136D50524693EC2F6395B2090F23CA9 /* Build configuration list for PBXNativeTarget "Pods-LeoDanmakuKit_Example" */;
+			buildPhases = (
+				178454F7628976C1DAA681404C22F3B5 /* Sources */,
+				A9686912A4815D510A21A860B2E2D4B7 /* Frameworks */,
+				75417E16140CA46D323189521BD49578 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7BB19F64FE22D4E4F1FF258DB40E253 /* PBXTargetDependency */,
+			);
+			name = "Pods-LeoDanmakuKit_Example";
+			productName = "Pods-LeoDanmakuKit_Example";
+			productReference = 87A607A39C1ADED13D9CB75CE95FB7E7 /* Pods_LeoDanmakuKit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65ABA67F41D9D88AA80EF7CBBCF7D910 /* Pods-LeoDanmakuKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B25AF5C5FAB819877F37646BE2E5047 /* Build configuration list for PBXNativeTarget "Pods-LeoDanmakuKit_Tests" */;
+			buildPhases = (
+				BEC59A3286CF19D468580B43FEF896B6 /* Sources */,
+				0DEFDE4B9EDC6AB08E125CDFC8DB1909 /* Frameworks */,
+				49619D3EBCBBB4F2BEA94433B6083715 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89414A59CA4B1BA00742F0EABE235A5D /* PBXTargetDependency */,
+			);
+			name = "Pods-LeoDanmakuKit_Tests";
+			productName = "Pods-LeoDanmakuKit_Tests";
+			productReference = 12398C88A77D4FC7CB1B913B5400CDEE /* Pods_LeoDanmakuKit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A78B62B1861F56608C17669A669497DE /* LeoDanmakuKit-LeoDanmakuKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5749B9382054781A0456717C7C34E287 /* Build configuration list for PBXNativeTarget "LeoDanmakuKit-LeoDanmakuKit" */;
+			buildPhases = (
+				C4E1E1DC5B4D42FBEB29AC6AA7CD3114 /* Sources */,
+				89441FECFCA4D2D848FE2B01F55D8BFF /* Frameworks */,
+				8ECE7C26A20C0DB9822BA914BAD61618 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LeoDanmakuKit-LeoDanmakuKit";
+			productName = "LeoDanmakuKit-LeoDanmakuKit";
+			productReference = E0FC8E85768472B06370E57178FFE84F /* LeoDanmakuKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 2596C5C04104125D846B60A86E1E303E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34A6E85F030F8082F6B085FB368B5F95 /* LeoDanmakuKit */,
+				A78B62B1861F56608C17669A669497DE /* LeoDanmakuKit-LeoDanmakuKit */,
+				60A8D17337B0BE279AC76382FAC87C1A /* Pods-LeoDanmakuKit_Example */,
+				65ABA67F41D9D88AA80EF7CBBCF7D910 /* Pods-LeoDanmakuKit_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8ECE7C26A20C0DB9822BA914BAD61618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3955C128E8FBACE53E9AF1AFF011A2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEDC47708826C954B66B6F43CDB4F1E /* LeoDanmakuKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		178454F7628976C1DAA681404C22F3B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5943B513BC0758FFA4BFC48837F6CC44 /* Pods-LeoDanmakuKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EB611F13C867A8F5D0306BB26CCCCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91A2F0DC3A22A06E1181481835128882 /* LeoDanmakuChannel.m in Sources */,
+				0EB01AADC77FE8A1DF4A883346613A20 /* LeoDanmakuChannelManager.m in Sources */,
+				7C70CC9D10258BE44565D4CFDD65763D /* LeoDanmakuKit-dummy.m in Sources */,
+				D7832A651B98C347BB0751CFE95B2255 /* LeoDanmakuLayer.m in Sources */,
+				BE4844B04C0158A2512392FBF2952357 /* LeoDanmakuRandom.m in Sources */,
+				0A0D7A4563411067FB4AF527297F76E3 /* LeoDanmakuView.m in Sources */,
+				C809ADA58A0775460F9794210FA37398 /* LeoDanmkuModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC59A3286CF19D468580B43FEF896B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2056D59A02C3205C75CF479E0896E80E /* Pods-LeoDanmakuKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4E1E1DC5B4D42FBEB29AC6AA7CD3114 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89414A59CA4B1BA00742F0EABE235A5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LeoDanmakuKit;
+			target = 34A6E85F030F8082F6B085FB368B5F95 /* LeoDanmakuKit */;
+			targetProxy = 66A71954977525C971F50081E57FAC87 /* PBXContainerItemProxy */;
+		};
+		C7BB19F64FE22D4E4F1FF258DB40E253 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LeoDanmakuKit;
+			target = 34A6E85F030F8082F6B085FB368B5F95 /* LeoDanmakuKit */;
+			targetProxy = 0720750A344D0C9A955AD088C8FBA0E5 /* PBXContainerItemProxy */;
+		};
+		E1A41CCF7238E1D6DFA0EC84DE6647E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LeoDanmakuKit-LeoDanmakuKit";
+			target = A78B62B1861F56608C17669A669497DE /* LeoDanmakuKit-LeoDanmakuKit */;
+			targetProxy = 0D9A5F6D134D42B0EF5C9318BD2FF6F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		18230E0EDF5290F8276D68DA5C77E54E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9C6591FA1C8119DA11BCB8C2463E71B /* LeoDanmakuKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = LeoDanmakuKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		4CAD6EE36BF770CF81BE0E3E093140E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D06D3245A945102F2A80251BE6E5166F /* Pods-LeoDanmakuKit_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LeoDanmakuKit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeoDanmakuKit_Example/Pods-LeoDanmakuKit_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_LeoDanmakuKit_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6FB8C5096BDD9D7133470752F54AE974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CF5BE973862F5CCAAE9942388999DB1 /* Pods-LeoDanmakuKit_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LeoDanmakuKit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeoDanmakuKit_Example/Pods-LeoDanmakuKit_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_LeoDanmakuKit_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		82852AFE822AF343E66DB549BC05B98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9C6591FA1C8119DA11BCB8C2463E71B /* LeoDanmakuKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LeoDanmakuKit/LeoDanmakuKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LeoDanmakuKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LeoDanmakuKit/LeoDanmakuKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LeoDanmakuKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CD88D7601FEE0A1E54C6AF5C4CC53C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9C6591FA1C8119DA11BCB8C2463E71B /* LeoDanmakuKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = LeoDanmakuKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CE00EEC6CFABCB270B9DBFDDA4352EA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA57A894A6B802CA5554E61BAB73FC93 /* Pods-LeoDanmakuKit_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LeoDanmakuKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeoDanmakuKit_Tests/Pods-LeoDanmakuKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_LeoDanmakuKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E420DE49359082ABC2B0EC79B1D8890B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9C6591FA1C8119DA11BCB8C2463E71B /* LeoDanmakuKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LeoDanmakuKit/LeoDanmakuKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LeoDanmakuKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LeoDanmakuKit/LeoDanmakuKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LeoDanmakuKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF37C43AE2214D4489F3069A6F574DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58EDC8B3AFFC5B985F14D3B91C85E6D5 /* Pods-LeoDanmakuKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LeoDanmakuKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeoDanmakuKit_Tests/Pods-LeoDanmakuKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_LeoDanmakuKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B25AF5C5FAB819877F37646BE2E5047 /* Build configuration list for PBXNativeTarget "Pods-LeoDanmakuKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF37C43AE2214D4489F3069A6F574DB0 /* Debug */,
+				CE00EEC6CFABCB270B9DBFDDA4352EA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5749B9382054781A0456717C7C34E287 /* Build configuration list for PBXNativeTarget "LeoDanmakuKit-LeoDanmakuKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD88D7601FEE0A1E54C6AF5C4CC53C93 /* Debug */,
+				18230E0EDF5290F8276D68DA5C77E54E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB9A03E06711799A25A3090D5642BD95 /* Build configuration list for PBXNativeTarget "LeoDanmakuKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82852AFE822AF343E66DB549BC05B98A /* Debug */,
+				E420DE49359082ABC2B0EC79B1D8890B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C136D50524693EC2F6395B2090F23CA9 /* Build configuration list for PBXNativeTarget "Pods-LeoDanmakuKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FB8C5096BDD9D7133470752F54AE974 /* Debug */,
+				4CAD6EE36BF770CF81BE0E3E093140E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
