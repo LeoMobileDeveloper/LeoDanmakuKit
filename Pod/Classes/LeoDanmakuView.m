@@ -51,6 +51,7 @@
     _channelManager = [LeoDanmakuChannelManager manager];
     _fireTimer = [NSTimer timerWithTimeInterval:self.channelManager.inverval target:self selector:@selector(timeToUpdateView) userInfo:nil repeats:true];
     _state = LeoDanmakuViewStateStoped;
+    _allowOverlapping = false;
     [[NSRunLoop mainRunLoop] addTimer:_fireTimer forMode:NSRunLoopCommonModes];
 }
 
@@ -58,7 +59,7 @@
     if (self.danmakuBuffers.count == 0) {
         return;
     }
-    LeoDanmakuRandom * random = [self.channelManager randomFreeChannelWithWidth:CGRectGetWidth(self.bounds)];
+    LeoDanmakuRandom * random = [self.channelManager randomFreeChannelWithWidth:CGRectGetWidth(self.bounds) CanOverLay:self.allowOverlapping];
     if (random == nil) {
         return;
     }

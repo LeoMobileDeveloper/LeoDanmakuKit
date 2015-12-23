@@ -72,7 +72,7 @@
     return [[self alloc] init];
 }
 
--(LeoDanmakuRandom *)randomFreeChannelWithWidth:(CGFloat)width{
+-(LeoDanmakuRandom *)randomFreeChannelWithWidth:(CGFloat)width CanOverLay:(BOOL)canOverlay{
     NSInteger randomChannel = arc4random() % self.channelsCount;
     LeoDanmakuRandom * random = nil;
     NSNumber * targetChannel = nil;
@@ -94,22 +94,28 @@
         random.channelIndex = targetChannel.integerValue;
         LeoDanmakuChannel * channel = [[self indexToChannelDic] objectForKey:targetChannel];
         LeoDanmakuLayer * activeLayer = [channel activeLayer];
+        
         if (activeLayer == nil) {
             random.speed = self.minSpeed + (self.maxSpeed - self.minSpeed)*arc4random()/ARC4RANDOM_MAX;
         }else{
-            CALayer * presentLayer = activeLayer.presentationLayer;
-            CGPoint location = presentLayer.position;
-            CGFloat layerWidth = CGRectGetWidth(presentLayer.bounds);
-            CGFloat lastIndex = location.x + layerWidth;
-            CGFloat activeSpeed = activeLayer.leoDanmakuSpeed;
-            CGFloat maxSpeed = activeSpeed * width /lastIndex;
-            if (maxSpeed < self.minSpeed) {
-                maxSpeed = self.minSpeed;
+            if (canOverlay) {
+                random.speed = self.minSpeed + (self.maxSpeed - self.minSpeed)*arc4random()/ARC4RANDOM_MAX;
+            }else{
+                CALayer * presentLayer = activeLayer.presentationLayer;
+                CGPoint location = presentLayer.position;
+                CGFloat layerWidth = CGRectGetWidth(presentLayer.bounds);
+                CGFloat lastIndex = location.x + layerWidth;
+                CGFloat activeSpeed = activeLayer.leoDanmakuSpeed;
+                CGFloat maxSpeed = activeSpeed * width /lastIndex;
+                if (maxSpeed < self.minSpeed) {
+                    maxSpeed = self.minSpeed;
+                }
+                if (maxSpeed > self.maxSpeed) {
+                    maxSpeed = self.maxSpeed;
+                }
+                random.speed = self.minSpeed + (maxSpeed - self.minSpeed)*arc4random()/ARC4RANDOM_MAX;
             }
-            if (maxSpeed > self.maxSpeed) {
-                maxSpeed = self.maxSpeed;
-            }
-            random.speed = self.minSpeed + (maxSpeed - self.minSpeed)*arc4random()/ARC4RANDOM_MAX;
+
         }
     }
     return random;

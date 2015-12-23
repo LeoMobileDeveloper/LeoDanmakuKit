@@ -35,7 +35,7 @@
 -(void)removeActiveLayer:(LeoDanmakuLayer *)danmakuLayer forChannel:(NSInteger)channelIndex;
 
 
--(LeoDanmakuRandom *)randomFreeChannelWithWidth:(CGFloat)width;
+-(LeoDanmakuRandom *)randomFreeChannelWithWidth:(CGFloat)width CanOverLay:(BOOL)canOverlay;
 
 -(void)clear;
 
