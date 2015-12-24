@@ -20,7 +20,7 @@
 - (IBAction)send:(id)sender {
     if (self.textfiled.text != nil) {
         NSArray * colors = @[[UIColor redColor],[UIColor blueColor],[UIColor greenColor],[UIColor whiteColor]];
-        LeoDanmkuModel * danmaku = [LeoDanmkuModel randomDanmkuWithColors:colors MaxFontSize:18 MinFontSize:15];
+        LeoDanmakuModel * danmaku = [LeoDanmakuModel randomDanmkuWithColors:colors MaxFontSize:18 MinFontSize:15];
         danmaku.text = self.textfiled.text;
         [self.danmakuView addDanmaku:danmaku];
         [self.textfiled endEditing:true];

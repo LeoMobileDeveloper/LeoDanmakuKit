@@ -5,13 +5,12 @@
 [![Platform](https://img.shields.io/cocoapods/p/LeoDanmakuKit.svg?style=flat)](http://cocoapods.org/pods/LeoDanmakuKit)
 
 ##Screenshot
- <img src="https://raw.github.com/LeoMobileDeveloper/LeoDanmakuKit/master/Screenshots/s1.png" width="320" />
+ <img src="https://raw.github.com/LeoMobileDeveloper/LeoDanmakuKit/master/Screenshots/gif.gif" width="320" />
 
 ## Requirements
 
 - ARC
-- iOS 7 (Manual)
-- iOS 8 (CocoaPod)
+- iOS 7 
 
 
 ## Support
@@ -58,7 +57,6 @@ When you want the view remove from superview and get dealloced,do not forget to 
 
 ```
 [self.danmakuView stopPlaying]
-
 ```
 
 ##Propertys

@@ -6,6 +6,6 @@
 //  Copyright © 2015年 WenchenHuang. All rights reserved.
 //
 
-#import "LeoDanmkuModel.h"
+#import "LeoDanmakuModel.h"
 #import "LeoDanmakuView.h"
 #import "LeoDanmakuChannelManager.h"
