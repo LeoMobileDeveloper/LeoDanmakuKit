@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@class LeoDanmkuModel;
+@class LeoDanmakuModel;
 
 @interface LeoDanmakuLayer : CATextLayer
 
--(instancetype)initWithDanmku:(LeoDanmkuModel *)danmku;
+-(instancetype)initWithDanmku:(LeoDanmakuModel *)danmku;
 
-+(instancetype)danmuLayerWith:(LeoDanmkuModel *)danmku;
++(instancetype)danmuLayerWith:(LeoDanmakuModel *)danmku;
 
--(void)setupWithDanmu:(LeoDanmkuModel *)danmku;
+-(void)setupWithDanmu:(LeoDanmakuModel *)danmku;
 
 
 @property (assign,nonatomic)CGFloat leoDanmakuSpeed;

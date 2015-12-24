@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface LeoDanmkuModel : NSObject
+@interface LeoDanmakuModel : NSObject
 
 @property (copy,nonatomic)NSString * text;
 

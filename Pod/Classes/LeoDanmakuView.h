@@ -13,8 +13,8 @@ typedef NS_ENUM(NSInteger,LeoDanmakuViewState){
     LeoDanmakuViewStatePaused,
     LeoDanmakuViewStateStoped
 };
-@class LeoDanmkuModel;
-
+@class LeoDanmakuModel;
+@class LeoDanmakuChannelManager;
 /**
  @abstract LeoDanmakuView is subview of UIView,it is the visual state of DanmakuView,you usually create an isntance of it,then add it as a subview
  */
@@ -24,13 +24,16 @@ typedef NS_ENUM(NSInteger,LeoDanmakuViewState){
 @property (readwrite,nonatomic,assign)BOOL allowOverlapping;
 
 @property (readonly,nonatomic,assign)LeoDanmakuViewState state;
+
+@property (strong,nonatomic)LeoDanmakuChannelManager * channelManager;
+
 /*!
  * @discussion Add a danmku
  * @param danmku object of LeoDanmkuModel
  * @return void
  */
 
--(void)addDanmaku:(LeoDanmkuModel *)danmku;
+-(void)addDanmaku:(LeoDanmakuModel *)danmku;
 
 /*!
  * @discussion Add a danmku

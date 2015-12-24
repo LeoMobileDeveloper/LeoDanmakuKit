@@ -7,10 +7,10 @@
 //
 
 #import "LeoDanmakuLayer.h"
-#import "LeoDanmkuModel.h"
+#import "LeoDanmakuModel.h"
 @implementation LeoDanmakuLayer
 
--(instancetype)initWithDanmku:(LeoDanmkuModel *)danmku{
+-(instancetype)initWithDanmku:(LeoDanmakuModel *)danmku{
     if (self = [super init]) {
         self.name = @"LeoDanmaKuLayer";
         self.anchorPoint = CGPointMake(0, 0);
@@ -20,11 +20,11 @@
     return self;
 }
 
-+(instancetype)danmuLayerWith:(LeoDanmkuModel *)danmku{
++(instancetype)danmuLayerWith:(LeoDanmakuModel *)danmku{
     return [[self alloc] initWithDanmku:danmku];
 }
 
--(void)setupWithDanmu:(LeoDanmkuModel *)danmku{
+-(void)setupWithDanmu:(LeoDanmakuModel *)danmku{
     self.foregroundColor = danmku.textColor.CGColor;
     self.backgroundColor = danmku.backgroundColor.CGColor;
     self.fontSize = danmku.fontSize;

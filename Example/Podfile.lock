@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LeoDanmakuKit: 6276f9b87a2209508f71e055cbd9f3c2aeb8831c
+  LeoDanmakuKit: 26df201817b4d67321e8bf4b33ef8aee6af07d77
 
 COCOAPODS: 0.39.0

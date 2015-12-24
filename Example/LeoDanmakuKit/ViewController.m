@@ -39,6 +39,9 @@
     self.danmakuView.allowOverlapping = true;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+    for (int i = 0;i < 100;i++) {
+        
+    }
     // Do any additional setup after loading the view, typically from a nib.
 }
 

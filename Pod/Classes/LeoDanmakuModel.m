@@ -6,9 +6,9 @@
 //  Copyright © 2015年 WenchenHuang. All rights reserved.
 //
 
-#import "LeoDanmkuModel.h"
+#import "LeoDanmakuModel.h"
 
-@implementation LeoDanmkuModel
+@implementation LeoDanmakuModel
 -(instancetype)init{
     if (self = [super init]) {
         _textColor = [UIColor greenColor];
@@ -18,12 +18,12 @@
     return self;
 }
 +(instancetype)danmkuWithString:(NSString *)text{
-    LeoDanmkuModel * danmku = [[self alloc] init];
+    LeoDanmakuModel * danmku = [[self alloc] init];
     danmku.text = text;
     return danmku;
 }
 +(instancetype)randomDanmkuWithColors:(NSArray *)colors MaxFontSize:(NSInteger)maxFont MinFontSize:(NSInteger)minFont{
-    LeoDanmkuModel * danmku  = [[self alloc] init];
+    LeoDanmakuModel * danmku  = [[self alloc] init];
     danmku.fontSize = minFont + arc4random() % (maxFont - minFont);
     danmku.textColor = colors[arc4random() % colors.count];
     return danmku;
