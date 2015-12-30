@@ -9,6 +9,29 @@
 #import "LeoDanmakuModel.h"
 
 @implementation LeoDanmakuModel
+-(instancetype)initWithCoder:(NSCoder *)aDecoder{
+    if (self = [super init]) {
+        self.text = [aDecoder decodeObjectForKey:@"kLeoDannmakuModelText"];
+        self.textColor = [aDecoder decodeObjectForKey:@"kLeoDanmakuModelTextColor"];
+        self.backgroundColor = [aDecoder decodeObjectForKey:@"kLeoDanmakuModelBackgroundColor"];
+        self.fontSize = [[aDecoder decodeObjectForKey:@"kLeoDanmakuModelFontSize"] integerValue];
+    }
+    return self;
+}
+-(void)encodeWithCoder:(NSCoder *)aCoder{
+   if(self.text) [aCoder encodeObject:self.text forKey:@"kLeoDannmakuModelText"];
+   if(self.textColor) [aCoder encodeObject:self.textColor forKey:@"kLeoDanmakuModelTextColor"];
+   if(self.backgroundColor) [aCoder encodeObject:self.backgroundColor forKey:@"kLeoDanmakuModelBackgroundColor"];
+    [aCoder encodeObject:@(self.fontSize) forKey:@"kLeoDanmakuModelFontSize"];
+}
+-(instancetype)copyWithZone:(NSZone *)zone{
+    LeoDanmakuModel * copyModel = [[self.class allocWithZone:zone] init];
+    copyModel->_text = self.text;
+    copyModel->_fontSize = self.fontSize;
+    copyModel->_backgroundColor = self.backgroundColor;
+    copyModel->_textColor = self.textColor;
+    return copyModel;
+}
 -(instancetype)init{
     if (self = [super init]) {
         _textColor = [UIColor greenColor];

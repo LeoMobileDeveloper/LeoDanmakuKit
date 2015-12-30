@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface LeoDanmakuModel : NSObject
+@interface LeoDanmakuModel : NSObject<NSCopying,NSCoding>
 
 @property (copy,nonatomic)NSString * text;
 
@@ -18,6 +18,7 @@
 @property (copy,nonatomic)UIColor * backgroundColor;
 
 @property (assign,nonatomic)NSInteger  fontSize;
+
 
 +(instancetype)danmkuWithString:(NSString *)text;
 
