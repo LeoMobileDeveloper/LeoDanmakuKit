@@ -20,6 +20,8 @@
 
 @property (readwrite,nonatomic,assign)LeoDanmakuViewState state;
 
+@property (strong,nonatomic)dispatch_queue_t dataQueue;
+
 @end
 
 @implementation LeoDanmakuView
@@ -45,6 +47,7 @@
     }
     return self;
 }
+
 //TODO: Need to be done
 #pragma mark - Private mehod
 
@@ -52,6 +55,7 @@
     _danmakuBuffers = [[NSMutableArray alloc] init];
     _channelManager = [LeoDanmakuChannelManager manager];
     _maxBufferSize = 300;
+    _dataQueue = dispatch_queue_create("com.LeodanmakuKit.dataQueue", DISPATCH_QUEUE_SERIAL);
 }
 
 -(void)timeToUpdateView{
@@ -62,9 +66,11 @@
     if (random == nil) {
         return;
     }
-    LeoDanmakuModel * danmkuModel = [self.danmakuBuffers firstObject];
-    [self.danmakuBuffers removeObjectAtIndex:0];
-    
+    __block LeoDanmakuModel * danmkuModel;
+    dispatch_sync(self.dataQueue, ^{
+        danmkuModel = [self.danmakuBuffers firstObject];
+        [self.danmakuBuffers removeObjectAtIndex:0];
+    });
     LeoDanmakuLayer * danmkuLayer = [[LeoDanmakuLayer alloc] initWithDanmku:danmkuModel];
     [self.layer addSublayer:danmkuLayer];
     danmkuLayer.leoDanmakuSpeed = random.speed;
@@ -122,15 +128,31 @@
 #pragma mark - API
 
 -(void)addDanmakuWithArray:(NSArray *)danmkus{
-    [_danmakuBuffers addObjectsFromArray:danmkus];
+    dispatch_async(self.dataQueue, ^{
+        [_danmakuBuffers addObjectsFromArray:danmkus];
+        [self limitBufferSize];
+    });
 }
 
 -(void)addDanmaku:(LeoDanmakuModel *)danmku{
-    [_danmakuBuffers addObject:danmku];
+    dispatch_async(self.dataQueue, ^{
+        [_danmakuBuffers addObject:danmku];
+        [self limitBufferSize];
+    });
 }
 -(void)limitBufferSize{
-    if (_danmakuBuffers.count > self.maxBufferSize) {
-        //Remove max - 50;
+    if (_danmakuBuffers.count > self.maxBufferSize) {//remove
+        NSMutableIndexSet * setToRemove = [NSMutableIndexSet new];
+        for (int index = 0; index < 5;index ++) {
+            NSRange toRemoveRange = NSMakeRange(index * self.maxBufferSize * 0.2,self.maxBufferSize * 0.04);
+            for (NSUInteger removeIndex = toRemoveRange.location; removeIndex < toRemoveRange.location + toRemoveRange.length; removeIndex++) {
+                LeoDanmakuModel * model = [_danmakuBuffers objectAtIndex:removeIndex];
+                if (model.removedWhenBufferFull == true) {
+                    [setToRemove addIndex:removeIndex];
+                }
+            }
+        }
+        [_danmakuBuffers removeObjectsAtIndexes:setToRemove];
     }
 }
 -(void)resume{

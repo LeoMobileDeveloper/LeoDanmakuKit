@@ -16,6 +16,9 @@
 ## Support
 
 - Storyboard
+- Auto limit buffer size
+- Random color or channel
+- High performance
 
 ## Installation
 
@@ -26,16 +29,19 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "LeoDanmakuKit"
 ```
+
 ## Manual installation
 
 You can also download the Example project and copy the Class floder into your project
 
 ## Usage
 
+
 ```
 #import "LeoDanmaku.h"
 
 ```
+
 
 When you add a new danmaku,you first create a `LeoDanmakuModel`,for example,you may use the random factory method build in
 
@@ -51,15 +57,17 @@ Then
 [self.danmakuView addDanmaku:danmaku];
 
 ```
+
 ##About remove 
 
 When you want the view remove from superview and get dealloced,do not forget to call
 
 ```
-[self.danmakuView stopPlaying]
+[self.danmakuView stop]
 ```
 
 ##Propertys
+
 You can set the speed and other related property of LeoDanmakuChannelManager
 
 ```

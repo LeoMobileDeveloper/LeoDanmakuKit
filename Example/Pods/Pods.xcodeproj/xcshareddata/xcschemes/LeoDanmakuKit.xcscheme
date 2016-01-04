@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1566D0913ED7ECF1B5E6B5A6'
+               BlueprintIdentifier = '0BBB4C33839F5FB31F381D0F'
                BlueprintName = 'LeoDanmakuKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'LeoDanmakuKit.framework'>

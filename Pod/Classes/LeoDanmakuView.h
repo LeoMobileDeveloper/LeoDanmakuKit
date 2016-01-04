@@ -20,12 +20,16 @@ typedef NS_ENUM(NSInteger,LeoDanmakuViewState){
  */
 @interface LeoDanmakuView : UIView
 
-//! Allow overlapping if line
+//! Allow overlapping or not
 @property (readwrite,nonatomic,assign)BOOL allowOverlapping;
 
+//! Current state of DanmakuView
 @property (readonly,nonatomic,assign)LeoDanmakuViewState state;
 
 @property (strong,nonatomic)LeoDanmakuChannelManager * channelManager;
+
+
+//! Max size of view buffer,default is 300,if there are more than 300 elements in buffer,it will auto clear 20%(60 items)
 
 @property (assign,nonatomic)NSInteger maxBufferSize;
 /*!
