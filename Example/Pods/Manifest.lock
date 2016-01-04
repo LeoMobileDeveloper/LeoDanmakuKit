@@ -1,5 +1,5 @@
 PODS:
-  - LeoDanmakuKit (0.1.0)
+  - LeoDanmakuKit (1.0.0)
 
 DEPENDENCIES:
   - LeoDanmakuKit (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LeoDanmakuKit: 26df201817b4d67321e8bf4b33ef8aee6af07d77
+  LeoDanmakuKit: 1c7eca4b4af8c1aa5fac60252e52df4de1c548a0
 
 COCOAPODS: 0.39.0

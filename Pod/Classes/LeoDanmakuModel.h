@@ -19,6 +19,7 @@
 
 @property (assign,nonatomic)NSInteger  fontSize;
 
+@property (assign,nonatomic)BOOL removedWhenBufferFull;
 
 +(instancetype)danmkuWithString:(NSString *)text;
 

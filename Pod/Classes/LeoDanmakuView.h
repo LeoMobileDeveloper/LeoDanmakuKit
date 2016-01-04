@@ -27,6 +27,7 @@ typedef NS_ENUM(NSInteger,LeoDanmakuViewState){
 
 @property (strong,nonatomic)LeoDanmakuChannelManager * channelManager;
 
+@property (assign,nonatomic)NSInteger maxBufferSize;
 /*!
  * @discussion Add a danmku
  * @param danmku object of LeoDanmkuModel
@@ -47,14 +48,14 @@ typedef NS_ENUM(NSInteger,LeoDanmakuViewState){
  * @param void
  * @return void
  */
--(void)resumePlaying;
+-(void)resume;
 
 /*!
  * @discussion Stop Playing
  * @param void
  * @return void
  */
--(void)stopPlaying;
+-(void)stop;
 
 /*!
  * @discussion hide/unhidden all danmku
@@ -64,7 +65,7 @@ typedef NS_ENUM(NSInteger,LeoDanmakuViewState){
 
 -(void)setAllDanmukuHidden:(BOOL)isHidden;
 
--(void)pausePlaying;
+-(void)pause;
 
 
 

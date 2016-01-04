@@ -18,6 +18,7 @@
 
 @property (strong,nonatomic)NSTimer * fireTimer;
 
+@property (readwrite,nonatomic,assign)LeoDanmakuViewState state;
 
 @end
 
@@ -50,6 +51,7 @@
 -(void)commonInit{
     _danmakuBuffers = [[NSMutableArray alloc] init];
     _channelManager = [LeoDanmakuChannelManager manager];
+    _maxBufferSize = 300;
 }
 
 -(void)timeToUpdateView{
@@ -98,6 +100,15 @@
     
 }
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
+    if (flag) {
+        [self clearWithAnimation:anim];
+        return;
+    }
+    if (self.state == LeoDanmakuViewStateStoped) {
+        [self clearWithAnimation:anim];
+    }
+}
+-(void)clearWithAnimation:(CAAnimation *)anim{
     LeoDanmakuLayer *layer = [anim valueForKey:@"leoLayer"];
     NSNumber * channel = [anim valueForKey:@"leochannel"];
     if(layer) {
@@ -108,7 +119,6 @@
         [self.channelManager removeActiveLayer:layer forChannel:channel.integerValue];
     }
 }
-
 #pragma mark - API
 
 -(void)addDanmakuWithArray:(NSArray *)danmkus{
@@ -118,8 +128,13 @@
 -(void)addDanmaku:(LeoDanmakuModel *)danmku{
     [_danmakuBuffers addObject:danmku];
 }
-
--(void)resumePlaying{
+-(void)limitBufferSize{
+    if (_danmakuBuffers.count > self.maxBufferSize) {
+        //Remove max - 50;
+    }
+}
+-(void)resume{
+    self.state = LeoDanmakuViewStatePlaying;
     if (self.fireTimer == nil) {
         _fireTimer = [NSTimer timerWithTimeInterval:self.channelManager.inverval target:self selector:@selector(timeToUpdateView) userInfo:nil repeats:true];
         [[NSRunLoop mainRunLoop] addTimer:_fireTimer forMode:NSRunLoopCommonModes];
@@ -140,7 +155,7 @@
         animation.toValue = @(0 - CGRectGetWidth(danmkuLayer.bounds));
         animation.duration = currentDuration;
         animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-        animation.removedOnCompletion = true;
+        animation.removedOnCompletion = NO;
         animation.fillMode = kCAFillModeForwards;
         animation.delegate = self;
         [animation setValue:danmkuLayer forKey:@"leoLayer"];
@@ -149,7 +164,8 @@
     }
 }
 
--(void)pausePlaying{
+-(void)pause{
+    self.state = LeoDanmakuViewStatePaused;
     for (CALayer * sublayer in self.layer.sublayers) {
         if ([sublayer.name isEqualToString:@"LeoDanmaKuLayer"] && [sublayer isKindOfClass:[LeoDanmakuLayer class]]) {
             LeoDanmakuLayer * danmakuLayer = (LeoDanmakuLayer *)sublayer;
@@ -162,7 +178,8 @@
     _fireTimer = nil;
 }
 
--(void)stopPlaying{
+-(void)stop{
+    self.state = LeoDanmakuViewStateStoped;
     [self.fireTimer invalidate];
     self.fireTimer = nil;
     [self.channelManager clear];
