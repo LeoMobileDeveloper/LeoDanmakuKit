@@ -16,6 +16,7 @@
         self.backgroundColor = [aDecoder decodeObjectForKey:@"kLeoDanmakuModelBackgroundColor"];
         self.fontSize = [[aDecoder decodeObjectForKey:@"kLeoDanmakuModelFontSize"] integerValue];
         self.removedWhenBufferFull = [[aDecoder decodeObjectForKey:@"kDanmakuModelRemovedWhenFull"] boolValue];
+        self.borderColor = [aDecoder decodeObjectForKey:@"kDanmakuModelBorderColor"];
     }
     return self;
 }
@@ -25,6 +26,7 @@
    if(self.backgroundColor) [aCoder encodeObject:self.backgroundColor forKey:@"kLeoDanmakuModelBackgroundColor"];
     [aCoder encodeObject:@(self.fontSize) forKey:@"kLeoDanmakuModelFontSize"];
     [aCoder encodeObject:@(self.removedWhenBufferFull) forKey:@"kLeoDanmakuModelFontSize"];
+   if(self.borderColor) [aCoder encodeObject:self.borderColor forKey:@"kDanmakuModelBorderColor"];
 }
 -(instancetype)copyWithZone:(NSZone *)zone{
     LeoDanmakuModel * copyModel = [[self.class allocWithZone:zone] init];
@@ -33,6 +35,7 @@
     copyModel->_backgroundColor = self.backgroundColor;
     copyModel->_textColor = self.textColor;
     copyModel->_removedWhenBufferFull = self.removedWhenBufferFull;
+    copyModel->_borderColor = self.borderColor;
     return copyModel;
 }
 -(instancetype)init{
@@ -41,6 +44,8 @@
         _backgroundColor = [UIColor clearColor];
         _fontSize = 14;
         _removedWhenBufferFull = true;
+        _borderColor = nil;
+        _borderColor = [UIColor clearColor];
     }
     return self;
 }

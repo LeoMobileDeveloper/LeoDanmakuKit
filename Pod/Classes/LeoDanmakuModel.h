@@ -21,6 +21,8 @@
 
 @property (assign,nonatomic)BOOL removedWhenBufferFull;
 
+@property (copy,nonatomic)UIColor * borderColor;
+
 +(instancetype)danmkuWithString:(NSString *)text;
 
 +(instancetype)randomDanmkuWithColors:(NSArray *)colors MaxFontSize:(NSInteger)maxFont MinFontSize:(NSInteger)minFont;

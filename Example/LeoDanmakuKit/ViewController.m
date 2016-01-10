@@ -22,6 +22,7 @@
         NSArray * colors = @[[UIColor redColor],[UIColor blueColor],[UIColor greenColor],[UIColor whiteColor]];
         LeoDanmakuModel * danmaku = [LeoDanmakuModel randomDanmkuWithColors:colors MaxFontSize:18 MinFontSize:15];
         danmaku.text = self.textfiled.text;
+        danmaku.borderColor = [UIColor whiteColor];
         [self.danmakuView addDanmaku:danmaku];
         [self.textfiled endEditing:true];
     }
