@@ -8,7 +8,7 @@
 
 #import "LeoDanmakuLayer.h"
 #import "LeoDanmakuModel.h"
-@implementation LeoDanmakuLayer
+@implementation LeoDanmakuLayer 
 
 -(instancetype)initWithDanmku:(LeoDanmakuModel *)danmku{
     if (self = [super init]) {
@@ -29,10 +29,10 @@
     self.backgroundColor = danmku.backgroundColor.CGColor;
     self.fontSize = danmku.fontSize;
     self.string = danmku.text;
-    CGSize textSize = [self.string boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, 100) options:NSStringDrawingUsesDeviceMetrics | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont fontWithName:@"Helvetica" size:self.fontSize]} context:nil].size;
+    CGSize textSize = [self.string boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, 45) options:NSStringDrawingUsesDeviceMetrics | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont fontWithName:@"Helvetica" size:self.fontSize]} context:nil].size;
     CGRect bound;
     bound.origin = CGPointZero;
-    bound.size = CGSizeMake(textSize.width + 5, 100);
+    bound.size = CGSizeMake(textSize.width + 5, 45);
     self.bounds = bound;
 }
 @end

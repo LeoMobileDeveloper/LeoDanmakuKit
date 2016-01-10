@@ -16,9 +16,9 @@
 
 @property (assign,nonatomic)CGFloat maxSpeed;
 
-@property (assign,nonatomic)CGFloat minSpeed;
+@property (assign,nonatomic)CGFloat minSpeed;//
 
-@property (assign,nonatomic)CGFloat minSpace;
+@property (assign,nonatomic)CGFloat minSpace;//default 20
 
 @property (assign,nonatomic)CGFloat inverval;//Default 0.25
 

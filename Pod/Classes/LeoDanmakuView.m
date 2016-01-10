@@ -54,7 +54,7 @@
 -(void)commonInit{
     _danmakuBuffers = [[NSMutableArray alloc] init];
     _channelManager = [LeoDanmakuChannelManager manager];
-    _maxBufferSize = 300;
+    _maxBufferSize = 100;
     _dataQueue = dispatch_queue_create("com.LeodanmakuKit.dataQueue", DISPATCH_QUEUE_SERIAL);
 }
 

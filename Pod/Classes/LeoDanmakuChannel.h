@@ -17,17 +17,43 @@ typedef NS_ENUM(NSInteger,LeoDanmakuChannelState){
 
 @property (nonatomic)LeoDanmakuChannelState state;
 
+/*!
+ * @discussion Add an active layer in to channel
+ * @param danmakuLayer a LeoDanmakuLayer instance
+ * @return void
+ */
 
 -(void)addActiveLayer:(LeoDanmakuLayer *)danmakuLayer;
 
+/*!
+ * @discussion Remove an active layer in to channel
+ * @param danmakuLayer a LeoDanmakuLayer instance
+ * @return void
+ */
 -(void)removeActiveLayer:(LeoDanmakuLayer *)danmakuLayer;
 
+/*!
+ * @discussion Clear all layers
+ * @param void
+ * @return void
+ */
 -(void)clearAllLayers;
 
+/*!
+ * @discussion Get the current active layer
+ * @param void
+ * @return LeoDanmakuLayer instance
+ */
 -(LeoDanmakuLayer *)activeLayer;
 
-+(instancetype)channel;
+/*!
+ * @discussion Factory method to create a channel
+ */
 
++(instancetype)channel;
+/*!
+ * @discussion Get all active layers
+ */
 -(NSArray *)allActiveLayers;
 
 @end
