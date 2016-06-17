@@ -5,12 +5,13 @@
 [![Platform](https://img.shields.io/cocoapods/p/LeoDanmakuKit.svg?style=flat)](http://cocoapods.org/pods/LeoDanmakuKit)
 
 ##Screenshot
- <img src="https://raw.github.com/LeoMobileDeveloper/LeoDanmakuKit/master/Screenshots/gif.gif" width="320" />
+
+ <img src="https://raw.github.com/LeoMobileDeveloper/LeoDanmakuKit/master/Screenshots/s.png" width="320" />
 
 ## Requirements
 
 - ARC
-- iOS 7 
+- iOS 7 +
 
 
 ## Support
