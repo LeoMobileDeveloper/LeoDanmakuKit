@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@interface PierceView : UIView
+    
+@end
+
 typedef NS_ENUM(NSInteger,LeoDanmakuViewState){
     LeoDanmakuViewStatePlaying,
     LeoDanmakuViewStatePaused,
@@ -18,7 +22,7 @@ typedef NS_ENUM(NSInteger,LeoDanmakuViewState){
 /**
  @abstract LeoDanmakuView is subview of UIView,it is the visual state of DanmakuView,you usually create an isntance of it,then add it as a subview
  */
-@interface LeoDanmakuView : UIView
+@interface LeoDanmakuView : PierceView
 
 //! Allow overlapping or not
 @property (readwrite,nonatomic,assign)BOOL allowOverlapping;

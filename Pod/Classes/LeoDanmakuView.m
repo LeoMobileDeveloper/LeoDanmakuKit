@@ -12,6 +12,14 @@
 #import "LeoDanmakuChannelManager.h"
 #import "LeoDanmakuRandom.h"
 
+@implementation PierceView
+    
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+    return NO;
+}
+    
+@end
+
 @interface LeoDanmakuView ()
 
 @property (strong,nonatomic)NSMutableArray * danmakuBuffers;
