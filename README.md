@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/LeoDanmakuKit.svg?style=flat)](http://cocoapods.org/pods/LeoDanmakuKit)
 [![Platform](https://img.shields.io/cocoapods/p/LeoDanmakuKit.svg?style=flat)](http://cocoapods.org/pods/LeoDanmakuKit)
 
-##Screenshot
+## Screenshot
 
  <img src="https://raw.github.com/LeoMobileDeveloper/LeoDanmakuKit/master/Screenshots/s.png" width="320" />
 
@@ -58,7 +58,7 @@ Then
 
 ```
 
-##About remove 
+## About remove 
 
 When you want the view remove from superview and get dealloced,do not forget to call
 
@@ -66,7 +66,7 @@ When you want the view remove from superview and get dealloced,do not forget to 
 [self.danmakuView stop]
 ```
 
-##Propertys
+## Propertys
 
 You can set the speed and other related property of LeoDanmakuChannelManager
 
@@ -91,4 +91,4 @@ LeoMobileDeveloper, leomobiledeveloper@gmail.com
 LeoDanmakuKit is available under the MIT license. See the LICENSE file for more info.
 
 ------
-##中文文档请见我的[博客](http://blog.csdn.net/hello_hwc/article/details/50382078)
+## 中文文档请见我的[博客](http://blog.csdn.net/hello_hwc/article/details/50382078)
